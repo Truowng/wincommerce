@@ -1,0 +1,262 @@
+:root {
+  /* color */
+  --black: #000;
+  --yellow-brown: #c6923e;
+  --white: #ffffff;
+  --red: #d3313a;
+  --light-black: #303030;
+  --beige: #f9f6f0;
+
+  /* dimension */
+  --header-height: 100px;
+  --border-radius-md: 3px;
+  --border-radius-lg: 5px;
+  --border-radius-xl: 5px;
+  --border-radius-circle: 300px;
+}
+
+.text-red {
+  color: var(--red);
+  font-weight: bolder;
+}
+
+.text-yellow-brown {
+  color: var(--yellow-brown);
+  font-weight: bolder;
+}
+
+.button {
+  background-color: var(--yellow-brown);
+  color: var(--white);
+
+  width: fit-content;
+}
+
+.button:hover {
+  color: var(--white);
+}
+
+.button-md {
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: var(--border-radius-md);
+}
+
+.button-lg {
+  font-size: 18px;
+  padding: 17px 45px;
+  border-radius: var(--border-radius-lg);
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title-container .title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.title-container.title-lg .title-text {
+  gap: 10px;
+}
+
+.title-container.title-lg .title-text .title {
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.title-container.title-lg .title-text .desc {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title-container.title-md .title-text {
+  gap: 6px;
+}
+
+.title-container.title-md .title-text .title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.title-container.title-md .title-text .desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.title-container.center .title-text {
+  align-items: center;
+}
+
+.title-container.center .title-text * {
+  text-align: center;
+}
+
+.title-container.horizontal {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+
+  width: 100%;
+}
+
+.separate-line {
+  width: fit-content;
+  height: 65px;
+
+  margin: 70px 0 30px;
+}
+
+.separate-line img {
+  width: auto;
+  height: 100%;
+}
+
+/* START HEADER */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: var(--header-height);
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--white);
+}
+
+#header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .header-content .logo {
+  display: block;
+  max-width: 287px;
+  width: 100%;
+}
+
+#header .header-content .logo img {
+  width: 100%;
+}
+
+#header .header-content .header-nav {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+  padding: 10px;
+}
+
+#header .header-content .header-nav .header-button-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#header .header-content .header-nav .header-button-container .search-button {
+  cursor: pointer;
+}
+
+/* END HEADER */
+
+/* START CONTENT */
+main {
+  margin-top: var(--header-height);
+}
+/* END CONTENT */
+
+/* START FOOTER */
+#footer {
+  margin-top: 87px;
+  padding: 95px 0 80px;
+
+  background: url("../images/footer/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#footer * {
+  color: var(--white);
+}
+
+#footer .footer-information {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+#footer .footer-link {
+  padding-top: 23px;
+  padding-left: 30px;
+}
+
+#footer .footer-link.social {
+  padding-left: 70px;
+}
+
+#footer .footer-link.social .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .footer-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#footer .footer-title-wrapper .title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+#footer .footer-title-wrapper .list-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footer .footer-title-wrapper .list-group .list {
+  width: fit-content;
+}
+
+#footer .footer-title-wrapper .list .item {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+
+  margin-bottom: 10px;
+}
+
+#footer .footer-title-wrapper .list .item .text {
+  width: fit-content;
+}
+
+#footer .footer-information .footer-title-wrapper .list .item a {
+  text-decoration: underline;
+}
+
+#footer .footer-information .footer-title-wrapper .title {
+  letter-spacing: unset;
+}
+
+#footer .footer-information .footer-title-wrapper {
+  gap: 13px;
+}
+/* END FOOTER */
