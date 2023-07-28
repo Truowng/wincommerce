@@ -1,0 +1,143 @@
+/* PC LOW RESOLUTION */
+@media (max-width: 1280px) {
+  /* START HEADER */
+  #header .header-content .header-nav {
+    gap: 30px;
+  }
+
+  #header .header-content .header-nav .header-button-container {
+    gap: 20px;
+  }
+  /* END HEADER */
+}
+@media (max-width: 992px) {
+  .button-lg {
+    font-size: 14px;
+    padding: 14px 30px;
+  }
+
+  .title-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .title-container.title-md .title-text .title {
+    font-size: 28px;
+    line-height: 50px;
+  }
+
+  .title-container.title-md .title-text .desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  /* START HEADER */
+  #header .header-content .header-nav {
+    display: none;
+  }
+
+  #header .header-content .header-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: var(--red);
+
+    border-radius: var(--border-radius-circle);
+  }
+
+  #header .header-content .header-nav-button i {
+    font-size: 18px;
+
+    color: var(--white);
+  }
+
+  #header .header-nav.mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--white);
+
+    transition: all ease 0.5s;
+  }
+
+  #header .header-nav.mobile .header-nav-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  /* END HEADER */
+
+  /* START FOOTER */
+  #footer .footer-title-wrapper .list-group {
+    gap: 80px;
+    justify-content: unset;
+  }
+
+  #footer .footer-link.social {
+    padding: 0;
+  }
+
+  #footer .footer-link.social {
+    margin-top: 20px;
+  }
+
+  #footer .footer-link.social .list {
+    gap: 30px;
+    justify-content: unset;
+  }
+  /* END FOOTER */
+}
+/* TABLET */
+
+@media (max-width: 768px) {
+  /* START HEADER */
+  #header .header-content .logo {
+    max-width: 180px;
+    padding-right: 20px;
+  }
+  /* END HEADER */
+
+  /* START FOOTER */
+  #footer .footer-link {
+    padding: 0;
+  }
+
+  #footer .footer-title-wrapper .list-group {
+    gap: 200px;
+  }
+
+  #footer .footer-copyright {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #footer .footer-copyright .text {
+    text-align: center;
+  }
+  /* END FOOTER */
+}
+/* MOBILE */
+
+@media (max-width: 576px) {
+  /* START FOOTER */
+  #footer .footer-title-wrapper .list-group {
+    gap: 0px;
+    justify-content: space-between;
+  }
+
+  /* END FOOTER */
+}

@@ -103,6 +103,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
+  flex-wrap: wrap;
 
   width: 100%;
 }
@@ -157,6 +158,10 @@
   gap: 70px;
 
   padding: 10px;
+}
+
+#header .header-content .header-nav-button {
+  display: none;
 }
 
 #header .header-content .header-nav .header-button-container {

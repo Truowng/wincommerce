@@ -13,8 +13,7 @@ const slider = new Swiper(".swiper", {
 
 const gallerySlider = new Swiper("#home-gallery .swiper", {
   direction: "horizontal",
-  slidesPerView: 4,
-
+  slidesPerView: 2,
   spaceBetween: "11px",
   loop: true,
   autoplay: {
@@ -25,15 +24,34 @@ const gallerySlider = new Swiper("#home-gallery .swiper", {
     prevEl: ".swiper-button-prev",
   },
   speed: 1000,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: "11px",
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: "11px",
+    },
+  },
 });
 
 const clientSlider = new Swiper("#home-client .swiper", {
   direction: "horizontal",
-  slidesPerView: 5,
-  spaceBetween: "20px",
+  slidesPerView: 1,
   loop: true,
   speed: 1000,
   autoplay: {
     delay: 2000,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: "10px",
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: "20px",
+    },
   },
 });
