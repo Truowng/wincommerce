@@ -55,7 +55,7 @@
     color: var(--white);
   }
 
-  #header .header-nav.mobile {
+  #header .header-nav.mobile.active {
     position: absolute;
     top: 0;
     left: 0;
