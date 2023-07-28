@@ -2,6 +2,7 @@
   /* color */
   --black: #000;
   --yellow-brown: #c6923e;
+  --yellow-brown-2: #b97f21;
   --white: #ffffff;
   --red: #d3313a;
   --light-black: #303030;
@@ -31,10 +32,13 @@
   color: var(--white);
 
   width: fit-content;
+
+  transition: all ease 0.5s;
 }
 
 .button:hover {
   color: var(--white);
+  background-color: var(--yellow-brown-2);
 }
 
 .button-md {
