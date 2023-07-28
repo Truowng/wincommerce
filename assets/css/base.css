@@ -5,6 +5,7 @@
   --white: #ffffff;
   --red: #d3313a;
   --light-black: #303030;
+  --light-black-2: #3f3f3f;
   --beige: #f9f6f0;
 
   /* dimension */
@@ -258,5 +259,22 @@ main {
 
 #footer .footer-information .footer-title-wrapper {
   gap: 13px;
+}
+
+#footer .footer-copyright {
+  padding-top: 50px;
+  margin-top: 50px;
+
+  border-top: 1px solid var(--light-black-2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .footer-copyright .text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: light;
 }
 /* END FOOTER */

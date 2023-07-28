@@ -160,10 +160,6 @@
   border-radius: var(--border-radius-xl);
 }
 
-#home-gallery .swiper .swiper-slide {
-  /* width: fit-content; */
-}
-
 #home-gallery .swiper-button-next,
 #home-gallery .swiper-button-prev {
   background-color: var(--white);
