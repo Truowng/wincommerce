@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LIB -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>WinCommerce</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo/logo.png" alt="logo" />
+          </a>
+          <nav class="header-nav">
+            <a href="#" class="header-nav-link">Trang chủ</a>
+            <a href="#" class="header-nav-link">Giới thiệu</a>
+            <a href="#" class="header-nav-link">Lĩnh vực</a
+            ><a href="#" class="header-nav-link active">Tuyển dụng</a>
+            <div class="header-button-container">
+              <div class="search-button">
+                <input type="text" placeholder="Tìm kiếm..." />
+                <div class="icon">
+                  <img src="./assets/images/icon/search.svg" alt="search" />
+                </div>
+              </div>
+              <a href="#" class="contact-button button button-md"> Liên hệ </a>
+            </div>
+          </nav>
+          <nav class="header-nav mobile">
+            <a href="#" class="header-nav-link">Trang chủ</a>
+            <a href="#" class="header-nav-link">Giới thiệu</a>
+            <a href="#" class="header-nav-link">Lĩnh vực</a
+            ><a href="#" class="header-nav-link">Tuyển dụng</a>
+            <div class="header-button-container">
+              <a href="#" class="contact-button button button-md"> Liên hệ </a>
+            </div>
+            <div class="header-nav-button">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </nav>
+          <div class="header-nav-button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <!-- START BANNER -->
+        <section id="banner">
+          <div class="banner-img">
+            <img src="./assets/images/banner/contact.jpg" alt="contact" />
+          </div>
+        </section>
+        <!-- END BANNER -->
+
+        <!-- START CONTACT -->
+        <section id="contact">
+          <div class="container">
+            <div class="row contact-content">
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <article class="title-container title-md">
+                      <div class="title-text">
+                        <h1 class="title">Liên hệ</h1>
+                        <div class="desc-container">
+                          <p class="desc">
+                            Cám ơn bạn đã liên hệ cho chúng tôi. <br />Email của
+                            bạn sẽ không được hiển thị công khai
+                          </p>
+                          <p class="tip">
+                            <span>*</span>Các trường bắt buộc được đánh dấu
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="contact-form-wrapper">
+                  <div class="contact-form">
+                    <input type="text" placeholder="Họ và tên*" />
+                    <input type="text" placeholder="Email" />
+                    <input type="text" placeholder="Địa chỉ chi tiết" />
+                    <div class="contact-form-item-wrapper">
+                      <input type="number" placeholder="Số điện thoại*" />
+                      <div class="contact-form-item">
+                        <input list="city" placeholder="Thành phố" />
+                        <datalist id="city">
+                          <option value="Hà Nội"></option>
+                          <option value="Thành phố Hồ Chí Minh"></option>
+                          <option value="Quảng Ninh"></option>
+                          <option value="Vinh"></option>
+                          <option value="Quảng Bình"></option>
+                        </datalist>
+                        <div class="contact-form-item-img">
+                          <img
+                            src="./assets/images/icon/caret-down.svg"
+                            alt="caret down"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <textarea
+                      cols="30"
+                      rows="5"
+                      placeholder="Nội dung"
+                    ></textarea>
+                  </div>
+                  <a href="#" class="contact-button button button-lg">
+                    Ứng tuyển
+                  </a>
+                  <div class="contact-form-submit-status" data-status="success">
+                    <div class="contact-form-submit-status-img">
+                      <img src="./assets/images/icon/check.svg" alt="check" />
+                    </div>
+                    <p class="text">
+                      Đơn ứng tuyển của bạn đã gửi thành công. Chúng tôi sẽ phản
+                      hồi lại cho bạn trong thời gian sớm nhất!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <article class="contact-information-wrapper">
+                  <div class="contact-information-item">
+                    <h3 class="title">Email</h3>
+                    <a href="mailto:tuyendung@wincommerce.vn" class="link"
+                      >tuyendung@wincommerce.vn</a
+                    >
+                  </div>
+                  <div class="contact-information-item">
+                    <h3 class="title">Phone</h3>
+                    <p class="desc">098 600 7643</p>
+                  </div>
+                  <div class="contact-information-item">
+                    <h3 class="title">Address</h3>
+                    <p class="desc">
+                      Số 23 Lê Duẩn, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh,
+                      Việt Nam
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END CONTACT -->
+
+        <!-- START MAPS -->
+        <section id="contact-maps">
+          <div class="container">
+            <div class="maps-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.264965897644!2d105.76290736814143!3d21.024519527159647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc0a03088cf%3A0xb0208ed3cfa5209!2sC%C3%B4ng%20ty%20CP%20DV-TM-TH%20Vincommerce!5e0!3m2!1svi!2s!4v1690948450902!5m2!1svi!2s"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <!-- END MAPS -->
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-12">
+            <article class="footer-information">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo/logo.png" alt="logo" />
+              </a>
+              <div class="footer-title-wrapper">
+                <h3 class="title">
+                  Công ty Cổ phần Dịch vụ Thương mại Wincommerce
+                </h3>
+                <ul class="list">
+                  <li class="item">
+                    <p class="text">
+                      Trụ sở chính: số 23 Lê Duẩn, Phường Bến Nghé, Quận 1,
+                      <br />
+                      TP. Hồ Chí Minh, Việt Nam.
+                    </p>
+                  </li>
+                  <li class="item">
+                    <p class="text">MSDN: 0104918404</p>
+                  </li>
+                  <li class="item">
+                    <p class="text">Phone: 039 824 6112 - Tel: +84 234 5678</p>
+                  </li>
+                  <li class="item">
+                    <p class="text">
+                      Email:&nbsp;
+                      <a href="mailto: tuyendung@wincommerce.vn"
+                        >tuyendung@wincommerce.vn</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <article class="footer-link">
+              <div class="footer-title-wrapper">
+                <h3 class="title">menu</h3>
+                <div class="list-group">
+                  <ul class="list">
+                    <li class="item"><a href="#">Trang chủ</a></li>
+                    <li class="item"><a href="#">Giới thiệu</a></li>
+                    <li class="item"><a href="#">Lĩnh vực</a></li>
+                    <li class="item"><a href="#">Tuyển dụng</a></li>
+                    <li class="item"><a href="#">Liên hệ</a></li>
+                  </ul>
+                  <ul class="list">
+                    <li class="item"><a href="#">Sitemap</a></li>
+                    <li class="item"><a href="#">Chính sách riêng tư</a></li>
+                    <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+                    <li class="item"><a href="#">Thông tin khác</a></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <article class="footer-link social">
+              <div class="footer-title-wrapper">
+                <h3 class="title">mạng xã hội</h3>
+                <ul class="list">
+                  <li class="item">
+                    <a href="#">
+                      <img
+                        src="./assets/images/icon/facebook.png"
+                        alt="facebook"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#">
+                      <img
+                        src="./assets/images/icon/instagram.png"
+                        alt="instagram"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#">
+                      <img
+                        src="./assets/images/icon/twitter.png"
+                        alt="twitter"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-12 col-md-12 col-12">
+            <article class="footer-copyright">
+              <p class="text">
+                2023 © Copyright of WinCommerce. All Right Reserved.
+              </p>
+              <p class="text">Số giấy phép: 548/GP-BTTTT ngày 24/08/2021</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- LIB -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- JS -->
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/slider.js"></script>
+  </body>
+</html>

@@ -4,6 +4,7 @@
   --yellow-brown: #c6923e;
   --yellow-brown-2: #b97f21;
   --white: #ffffff;
+  --white-2: #f2f2f2;
   --red: #d3313a;
   --red-2: #ee1b24;
   --light-red: #fcd0d2;
@@ -271,11 +272,143 @@ main {
 }
 
 /* end banner */
+
+/* start form */
+
+.contact-form-wrapper .title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.contact-form-wrapper .contact-form {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form-wrapper .contact-form input,
+.contact-form-wrapper .contact-form textarea {
+  outline: none;
+
+  border: 1px solid var(--gray-3);
+  border-radius: var(--border-radius-md);
+
+  width: 100%;
+
+  padding: 15px 10px 15px 20px;
+
+  transition: all ease 0.5s;
+}
+
+.contact-form-wrapper
+  .contact-form
+  input[type="number"]::-webkit-outer-spin-button,
+.contact-form-wrapper
+  .contact-form
+  input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact-form-wrapper .contact-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.contact-form-wrapper .contact-form textarea {
+  resize: none;
+}
+
+.contact-form-wrapper .contact-form input:focus,
+.contact-form-wrapper .contact-form textarea:focus {
+  border-color: var(--yellow-brown);
+}
+
+.contact-form .contact-form-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.contact-form .contact-form-item {
+  position: relative;
+  width: 100%;
+}
+
+.contact-form .contact-form-item .contact-form-item-img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 11px;
+}
+
+.contact-form .contact-form-item .contact-form-item-img img {
+  width: 100%;
+}
+
+.contact-form-wrapper .button {
+  margin-top: 50px;
+}
+
+.contact-form-wrapper .contact-form-submit-status {
+  padding: 27px 17px 27px 27px;
+  margin-top: 35px;
+
+  border-radius: var(--border-radius-lg);
+
+  display: flex;
+  gap: 14px;
+}
+
+.contact-form-wrapper
+  .contact-form-submit-status
+  .contact-form-submit-status-img {
+  min-width: 47px;
+  height: 47px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: var(--border-radius-circle);
+}
+
+.contact-form-wrapper .contact-form-submit-status .text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact-form-wrapper .contact-form-submit-status[data-status="success"] {
+  background-color: var(--light-green);
+}
+
+.contact-form-wrapper
+  .contact-form-submit-status[data-status="success"]
+  .contact-form-submit-status-img {
+  background-color: var(--green);
+}
+
+.contact-form-wrapper .contact-form-submit-status[data-status="failed"] {
+  background-color: var(--light-red);
+}
+
+.contact-form-wrapper
+  .contact-form-submit-status[data-status="failed"]
+  .contact-form-submit-status-img {
+  background-color: var(--red-2);
+}
+/* end form */
 /* END CONTENT */
 
 /* START FOOTER */
 #footer {
-  margin-top: 87px;
+  margin-top: 100px;
   padding: 95px 0 80px;
 
   background: url("../images/footer/background.jpg") no-repeat;
