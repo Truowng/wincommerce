@@ -5,17 +5,38 @@
   --yellow-brown-2: #b97f21;
   --white: #ffffff;
   --red: #d3313a;
+  --red-2: #ee1b24;
+  --light-red: #fcd0d2;
+  --green: #20b92f;
+  --light-green: #d7f8da;
   --light-black: #303030;
   --light-black-2: #3f3f3f;
   --beige: #f9f6f0;
+  --gray: #646464;
+  --gray-2: #888888;
+  --gray-3: #dfdfdf;
+  --gray-4: #999999;
 
   /* dimension */
   --header-height: 100px;
   --border-radius-md: 3px;
   --border-radius-lg: 5px;
   --border-radius-xl: 5px;
+  --border-radius-xxl: 20px;
   --border-radius-circle: 300px;
 }
+
+/* START KEYFRAMES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* END KEYFRAMES */
 
 .text-red {
   color: var(--red);
@@ -28,6 +49,8 @@
 }
 
 .button {
+  display: block;
+
   background-color: var(--yellow-brown);
   color: var(--white);
 
@@ -162,6 +185,12 @@
   gap: 70px;
 
   padding: 10px;
+
+  transition: all ease 0.5s;
+}
+
+#header .header-content .header-nav .header-nav-link {
+  font-weight: 500;
 }
 
 #header .header-content .header-nav.mobile {
@@ -179,15 +208,69 @@
 }
 
 #header .header-content .header-nav .header-button-container .search-button {
+  position: relative;
   cursor: pointer;
+}
+
+#header
+  .header-content
+  .header-nav
+  .header-button-container
+  .search-button.active
+  input {
+  width: 160px;
+  opacity: 1;
+}
+
+#header
+  .header-content
+  .header-nav
+  .header-button-container
+  .search-button
+  input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--gray-3);
+
+  padding: 5px 0;
+
+  max-width: 160px;
+  width: 0px;
+
+  opacity: 0;
+
+  transition: all ease 0.5s;
+}
+
+#header
+  .header-content
+  .header-nav
+  .header-button-container
+  .search-button
+  .icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
 }
 
 /* END HEADER */
 
 /* START CONTENT */
+
 main {
   margin-top: var(--header-height);
 }
+
+/* start banner */
+
+#banner .banner-img,
+#banner .banner-img img {
+  width: 100%;
+}
+
+/* end banner */
 /* END CONTENT */
 
 /* START FOOTER */

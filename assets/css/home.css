@@ -237,6 +237,92 @@
 /* END TEAMMATE */
 
 /* START PROJECT */
+#home-project .home-project-modal {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  animation: fadeIn ease 0.5s;
+}
+
+#home-project .home-project-modal .modal-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-project .home-project-modal .modal-content-wrapper {
+  background-color: var(--white);
+
+  padding: 44px 82px 44px 44px;
+
+  border-radius: var(--border-radius-xxl);
+
+  max-width: 1062px;
+  width: 100%;
+  max-height: 551px;
+  height: 100%;
+}
+
+#home-project .modal-content-wrapper .modal-content-img {
+  width: 100%;
+  height: 100%;
+}
+
+#home-project .modal-content-wrapper .modal-content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home-project .modal-content-container {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 24px 0 24px 34px;
+}
+
+#home-project .modal-content-container .modal-content-text .title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+#home-project .modal-content-container .modal-content-text .desc {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--gray);
+}
+
+#home-project .modal-content-container .modal-content-link {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  text-decoration: underline;
+
+  color: var(--yellow-brown);
+}
+
 #home-project .title-container .title-text {
   max-width: 462px;
 }

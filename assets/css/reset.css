@@ -21,7 +21,7 @@ a {
   transition: all ease 0.5s;
 }
 
-.active,
+a.active,
 a:hover {
   color: var(--yellow-brown);
 }
