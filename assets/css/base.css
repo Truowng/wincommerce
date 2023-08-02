@@ -17,6 +17,7 @@
   --gray-2: #888888;
   --gray-3: #dfdfdf;
   --gray-4: #999999;
+  --gray-5: #727272;
 
   /* dimension */
   --header-height: 100px;
@@ -107,6 +108,18 @@
   gap: 6px;
 }
 
+.title-container.title-md .title-text .badge {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  padding: 0;
+  margin-bottom: 6px;
+
+  color: var(--yellow-brown);
+}
+
 .title-container.title-md .title-text .title {
   font-size: 36px;
   font-weight: bold;
@@ -117,6 +130,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+
+  margin-bottom: 9px;
 }
 
 .title-container.center .title-text {
@@ -146,6 +161,20 @@
 .separate-line img {
   width: auto;
   height: 100%;
+}
+
+.content-component .right .content-component-text {
+  margin-left: auto;
+}
+
+.content-component .content-component-img,
+.content-component .content-component-img img {
+  width: 100%;
+}
+
+.content-component .content-component-text {
+  max-width: 485px;
+  width: 100%;
 }
 
 /* START HEADER */

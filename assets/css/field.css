@@ -1,0 +1,59 @@
+#finance
+  .content-component
+  .content-component-text
+  .title-container.title-md
+  .desc,
+#ecommerce
+  .content-component
+  .content-component-text
+  .title-container.title-md
+  .desc,
+#real-estate
+  .content-component
+  .content-component-text
+  .title-container.title-md
+  .desc {
+  color: var(--gray-5);
+}
+
+/* START FINANCE */
+#finance {
+  margin-top: 131px;
+}
+/* END FINANCE */
+
+/* START ECOMMERCE */
+#ecommerce {
+  margin-top: 178px;
+}
+/* END ECOMMERCE */
+
+/* START REAL ESTATE */
+#real-estate {
+  margin-top: 202px;
+}
+/* END REAL ESTATE */
+
+/* START FOOTER */
+#footer {
+  margin-top: 442px;
+}
+/* END FOOTER */
+
+/* START RESPONSIVE */
+@media (max-width: 768px) {
+  #ecommerce,
+  #real-estate {
+    margin-top: unset;
+  }
+
+  #ecommerce .row {
+    flex-direction: column-reverse;
+  }
+
+  #footer {
+    margin-top: 100px;
+  }
+}
+
+/* END RESPONSIVE */
