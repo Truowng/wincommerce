@@ -115,6 +115,10 @@
     max-width: unset;
   }
 
+  .title-container.title-md .title-text .badge {
+    font-size: 14px;
+  }
+
   /* START HEADER */
   #header .header-content .logo {
     max-width: 180px;

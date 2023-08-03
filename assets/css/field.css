@@ -1,18 +1,6 @@
-#finance
-  .content-component
-  .content-component-text
-  .title-container.title-md
-  .desc,
-#ecommerce
-  .content-component
-  .content-component-text
-  .title-container.title-md
-  .desc,
-#real-estate
-  .content-component
-  .content-component-text
-  .title-container.title-md
-  .desc {
+#finance .title-container.title-md .desc,
+#ecommerce .title-container.title-md .desc,
+#real-estate .title-container.title-md .desc {
   color: var(--gray-5);
 }
 
